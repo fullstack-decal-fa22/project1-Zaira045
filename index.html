@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link href="./styles.css" rel="stylesheet" />
+        <script src="javascript.js"></script>
+        <meta name="author" content="Zaira Fuentes">
+        <meta name="description" content="Zaira's Personal Website">
+        <title>Zaira Fuentes Personal Website</title>
+    </head>
+    <body>
+        <div class = "navBar">
+            <div calss = "navLinks">
+                <ul>
+                    <li>
+                        <a class = "navElem" href="#contactInfo">Contact</a>
+                    </li>
+                    <li>
+                        <a class = "navElem" href="#projects">Work</a>
+                    </li>
+                    <li>
+                        <a class = "navElem" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id = "about">
+        <h1>
+            Hello! I am Zaira Fuentes, currently a sophmore studying Computer Science at UC Berkeley
+        </h1>
+        <h2>
+            Thank you for stopping by!
+        </h2>
+        <h2>
+            Take a look at some of my projects!
+        </h2>
+        <div class = "arrowContainer">
+            <button class = "arrowButton" onclick="location.href = '#projects'">
+                <i class = "downArrow"></i>
+            </button>
+        </div>
+        </div>
+
+        <div id = "projects">
+            <div class="titles">
+                <button class="projTitle" onclick = "location.href = 'https://inst.eecs.berkeley.edu/~cs61b/sp22/materials/proj/proj3/index.html'"> <h4>Gitlet </h4> </button>
+                <button class="projTitle" onclick = "location.href = 'https://inst.eecs.berkeley.edu/~cs61b/sp22/materials/proj/proj1/index.html#background'"> <h4>Enigma </h4> </button>
+                <button class="projTitle" onclick = "location.href = 'https://inst.eecs.berkeley.edu/~cs61a/fa21/proj/scheme/'"> <h4>Scheme </h4> </button>         
+            </div>
+            <div class="proj1">
+                <img src="https://inst.eecs.berkeley.edu/~cs61b/sp22/materials/proj/proj3/image/split_point.png" class="projImg">
+                <div class="projTitleSecond"> <h5>Gitlet</h5></div>
+                <div class="projContent"> <p>Gitlet is a version control system inspired by the popular system Git. It is a course project of CS61B: Data Structures at UC Berkeley. Gitlet mimics some features of Git. It supports operations such as add, commit, status, log, checkout, reset, branch, merge.</p></div>
+            </div>
+            <div class="proj2">
+                <img src="https://inst.eecs.berkeley.edu/~cs61b/sp22/materials/proj/proj1/img/figure3.png" class="projImg">
+                <div class="projTitleSecond"> <h5>Enigma</h5></div>
+                <div class="projContent"><p>A recreation of the Enigma machine utilized by the Germans in World War Two. To use, create .in files with text input and a .conf file with the machine configuration. This programming assignment is intended to exercise a few useful datastructures and an object-based view of a programming problem.</p></div>
+            </div>
+            <div class="proj3">
+                <img src="https://th.bing.com/th/id/R.d72db2c623415f186f297d4caf8daf04?rik=mqRrb%2bbc%2bDogmg&riu=http%3a%2f%2fcaseytakeda.com%2fassets%2fprojimages%2fscheme.png&ehk=ZPETFEUkRZQMOiDPo%2f90khkNLAryCK1HDQaf%2bUOaBHc%3d&risl=&pid=ImgRaw&r=0" class="projImg">
+                <div class="projTitleSecond"> <h5>Scheme</h5></div>
+                <div class="projContent"><p>The Scheme project involves writing an interpreter for the Scheme language. In this project, I developed an interpreter for a subset of the Scheme language. </p></div>
+            </div>
+        </div>
+        <div id = "contactInfo">
+            <p class = "contactMe">Let's get in contact!</p>
+            <button class = "email" onclick="display()"> <img class = "icon" src = "emailicon.png"> </button>
+            <p class ="displayEmail"></p>
+        </div>
+    </body>
+</html>

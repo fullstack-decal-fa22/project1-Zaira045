@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    font-family: 'Roboto';
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 22px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navBar {
+    position: sticky;
+    top: 0;
+}
+li {
+    float: right;
+}
+.navElem {
+    display: block;
+    padding: 8px;
+    background-color: white;
+  }
+li .navElem {
+    display: block;
+    text-align: center;
+    padding: 15px 30px 15px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+li .navElem:hover{
+    background-color: black;
+    color: white;
+}
+/* Intro */
+h1 {
+    font-weight: 400;
+    font-size: 60px;
+    margin-right: 400px;
+    margin-left: 58px;
+    margin-top: 0;
+}
+/* thank you for visiting */
+h2 {
+    font-weight: 300;
+    margin-left: 58px;
+    font-size: 30px;
+}
+
+/* lets get in contact */
+h3 {
+
+}
+/* project titles  */
+h4 {
+    font-size: 15px;
+    text-align: center;
+}
+/* project titles */
+h5 {
+    font-size: 15px;
+    text-align: center;
+
+
+}
+/* ???? */
+h6 {
+
+}
+.arrowButton{
+    border: none;
+    outline: none;
+    background-color: white;
+}
+.email {
+    border: none;
+    outline: none;
+    background-color: white;
+
+}
+.email:hover{
+    background-image:
+    radial-gradient(
+        circle closest-side,
+        gray,
+        white
+    );
+}
+.arrowContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.downArrow {
+    border: solid black;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.downArrow:hover {
+    box-shadow: 0px 12px 15px -4px rgba(31, 73, 125, 0.8), 0px -9px 0px 0px white, 12px 0 15px -4px rgba(31, 73, 125, 0.8), 9px 9px 0px -9px white;
+}
+.projContent {
+    font-size: medium;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.projTitle {
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    background-color: gray;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.projTitle:hover {
+    background-color: whitesmoke;
+
+}
+.projTitleSecond {
+    border-radius: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: gray;
+
+} 
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+    "a b"
+    "c d";
+}
+.projImg {
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 200px;
+    max-width: 200px;
+
+}
+.titles  {
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.proj1 {
+    display: flex;
+    grid-area: b;
+    flex-direction: column;
+}
+.proj2 {
+    display: flex;
+    grid-area: c;
+    flex-direction: column;
+}
+.proj3 {
+    display: flex;
+    grid-area: d;
+    flex-direction: column;
+}
+#contactInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contactMe {
+    text-align: center;
+
+}
+.icon {
+    max-width: 50px;
+    max-height: 50px;
+}
+.displayEmail {
+    text-align: center;
+}
